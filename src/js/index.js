@@ -1,6 +1,15 @@
 import React from "react";
-import { render } from "react-dom";
+import { createRoot } from "react-dom/client";
+import "../css/style.css";
+import keen from "../assets/keenInfo.png";
 const App = () => {
-	return <div> Hello there</div>;
+	return (
+		<div>
+			ZRS Tech
+			<img src={keen} alt="keen" />
+		</div>
+	);
 };
-render(<App />, document.getElementById("app"));
+const container = document.getElementById("app");
+const root = createRoot(container);
+root.render(<App tab="home" />);
