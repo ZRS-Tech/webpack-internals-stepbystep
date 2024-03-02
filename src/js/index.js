@@ -1,7 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import "../css/style.css";
-import keen from "../assets/keenInfo.png";
+import "../assets/css/style.css";
+import keen from "../assets/images/keenInfo.png";
 const App = () => {
 	return (
 		<div>
